@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desperte seu modo monstro com o energético fitness Mansão Maromba. Energia extrema, foco implacável, beta-alanina e zero açúcar para esmagar seus treinos.">
+    <meta name="keywords" content="energético, fitness, mansão maromba, pré-treino, beta-alanina, zero açúcar, hipertrofia, musculação">
+    <meta name="author" content="Mansão Maromba">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mansão Maromba Energy - Desperte o Monstro">
+    <meta property="og:description" content="O energético hardcore feito para atletas. Energia duradoura, foco extremo e zero açúcar. Escolha seu sabor e domine o treino.">
+    <meta property="og:image" content="assets/images/monstro_citrus.png">
+
+    <title>Mansão Maromba Energy | Energético Fitness Hardcore</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-citrus">
+    
+    <!-- Header/Navigation -->
+    <header id="main-header" class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo" id="nav-logo">
+                <span class="header__logo-highlight">MANSÃO</span>MAROMBA
+            </a>
+            <nav id="main-nav" class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#sabores" class="header__nav-link" id="link-sabores">Sabores</a></li>
+                    <li><a href="#beneficios" class="header__nav-link" id="link-beneficios">Benefícios</a></li>
+                    <li><a href="#formula" class="header__nav-link" id="link-formula">Fórmula</a></li>
+                    <li><a href="#depoimentos" class="header__nav-link" id="link-depoimentos">Atletas</a></li>
+                    <li><a href="#faq" class="header__nav-link" id="link-faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="header__cta">
+                <a href="#sabores" class="btn btn--primary" id="btn-header-buy">COMPRAR AGORA</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero__bg-text" id="hero-bg-text-shadow">CITRUS</div>
+        <div class="container hero__container">
+            <div class="hero__content">
+                <div class="badge" id="hero-badge">PRÉ-TREINO INSANO</div>
+                <h1 class="hero__title" id="hero-main-title">O SABOR ENERGÉTICO</h1>
+                <p class="hero__description" id="hero-desc-text">
+                    O único energético fitness formulado com beta-alanina, taurina e cafeína para te manter no topo. Sinta a energia explodir e o foco durar sem efeito rebote.
+                </p>
+                <div class="hero__actions">
+                    <a href="#sabores" class="btn btn--primary btn--large" id="btn-hero-cta">COMPRAR AGORA</a>
+                    <a href="#formula" class="btn btn--secondary btn--large" id="btn-hero-sec">CONHECER FÓRMULA</a>
+                </div>
+            </div>
+
+            <!-- Product View & Flavor Selector -->
+            <div class="hero__product-view">
+                <div class="hero__product-glow" id="product-glow-effect"></div>
+                <div class="hero__product-image-container">
+                    <img src="assets/images/monstro_citrus.png" alt="Lata do energético Mansão Maromba Sabor Citrus" class="hero__product-image hero__product-image--active" id="product-can-img">
+                </div>
+                
+                <!-- Flavor Selector Widget -->
+                <div class="flavor-selector">
+                    <p class="flavor-selector__title">ESCOLHA SEU SABOR:</p>
+                    <div class="flavor-selector__list" id="flavor-selector-container">
+                        <button class="flavor-selector__dot flavor-selector__dot--active" data-flavor="citrus" data-bgtext="CITRUS" data-img="assets/images/monstro_citrus.png" data-theme="theme-citrus" aria-label="Sabor Monstro Citrus" id="selector-citrus">
+                            <span class="flavor-selector__dot-color flavor-selector__dot-color--citrus"></span>
+                            <span class="flavor-selector__dot-name">Monstro Citrus</span>
+                        </button>
+                        <button class="flavor-selector__dot" data-flavor="berry" data-bgtext="BERRY" data-img="assets/images/insane_berry.png" data-theme="theme-berry" aria-label="Sabor Insane Berry" id="selector-berry">
+                            <span class="flavor-selector__dot-color flavor-selector__dot-color--berry"></span>
+                            <span class="flavor-selector__dot-name">Insane Berry</span>
+                        </button>
+                        <button class="flavor-selector__dot" data-flavor="mango" data-bgtext="MANGO" data-img="assets/images/double_mango.png" data-theme="theme-mango" aria-label="Sabor Double Mango" id="selector-mango">
+                            <span class="flavor-selector__dot-color flavor-selector__dot-color--mango"></span>
+                            <span class="flavor-selector__dot-name">Double Mango</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sabores Showcase Section -->
+    <section id="sabores" class="sabores">
+        <div class="container">
+            <h2 class="sabores__title text-center" id="sabores-title">EXPLOSÃO DE SABORES</h2>
+            <p class="sabores__subtitle text-center" id="sabores-subtitle">Criados para agradar o seu paladar e potencializar o seu treino.</p>
+            
+            <div class="sabores__grid">
+                <!-- Sabor 1 -->
+                <div class="card card--flavor card--citrus" id="card-flavor-citrus">
+                    <div class="card__img-wrapper">
+                        <img src="assets/images/monstro_citrus.png" alt="Sabor Monstro Citrus" class="card__img">
+                    </div>
+                    <div class="card__content">
+                        <h3>Monstro Citrus</h3>
+                        <span class="card__tag card__tag--citrus">Limão & Yuzu</span>
+                        <p class="card__description">Refrescância ácida extrema com notas marcantes e revigorantes de limão siciliano combinadas à sofisticação cítrica do yuzu oriental.</p>
+                        <button class="btn btn--card btn--select-flavor" data-target="citrus" id="btn-select-citrus">Selecionar</button>
+                    </div>
+                </div>
+
+                <!-- Sabor 2 -->
+                <div class="card card--flavor card--berry" id="card-flavor-berry">
+                    <div class="card__img-wrapper">
+                        <img src="assets/images/insane_berry.png" alt="Sabor Insane Berry" class="card__img">
+                    </div>
+                    <div class="card__content">
+                        <h3>Insane Berry</h3>
+                        <span class="card__tag card__tag--berry">Frutas Vermelhas</span>
+                        <p class="card__description">Frutado e intensamente adocicado. Uma fusão equilibrada e encorpada de morangos frescos, amoras silvestres e mirtilos selecionados.</p>
+                        <button class="btn btn--card btn--select-flavor" data-target="berry" id="btn-select-berry">Selecionar</button>
+                    </div>
+                </div>
+
+                <!-- Sabor 3 -->
+                <div class="card card--flavor card--mango" id="card-flavor-mango">
+                    <div class="card__img-wrapper">
+                        <img src="assets/images/double_mango.png" alt="Sabor Double Mango" class="card__img">
+                    </div>
+                    <div class="card__content">
+                        <h3>Double Mango</h3>
+                        <span class="card__tag card__tag--mango">Manga & Maracujá</span>
+                        <p class="card__description">Doçura tropical encorpada e aromática. A combinação ideal da polpa suculenta de manga com a acidez marcante da fruta do maracujá.</p>
+                        <button class="btn btn--card btn--select-flavor" data-target="mango" id="btn-select-mango">Selecionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="benefits__wrapper">
+                <div class="benefits__info">
+                    <span class="badge">VANTAGENS</span>
+                    <h2 class="benefits__title" id="beneficios-heading">POR QUE A MANSÃO MAROMBA É DIFERENTE?</h2>
+                    <p class="benefits__description">
+                        Esqueça os energéticos comuns cheios de açúcar e que causam fadiga logo após o término do efeito. Nossa fórmula foi desenhada por nutricionistas esportivos com foco em bodybuilding.
+                    </p>
+                </div>
+                
+                <div class="benefits__grid">
+                    <div class="card card--glass card--benefit" id="benefit-sugar">
+                        <div class="card__icon-box icon-sugar">0%</div>
+                        <h3>Zero Açúcar</h3>
+                        <p class="card__description">Treine limpo. Zero picos de insulina, zero acúmulo indesejado de gordura.</p>
+                    </div>
+                    <div class="card card--glass card--benefit" id="benefit-beta">
+                        <div class="card__icon-box icon-beta">⚡</div>
+                        <h3>Beta-Alanina Ativa</h3>
+                        <p class="card__description">A dosagem certa para provocar a vasodilatação necessária e o foco na execução.</p>
+                    </div>
+                    <div class="card card--glass card--benefit" id="benefit-focus">
+                        <div class="card__icon-box icon-focus">👁️</div>
+                        <h3>Foco Cognitivo</h3>
+                        <p class="card__description">Combinação inteligente de Cafeína + Taurina para foco mental cirúrgico.</p>
+                    </div>
+                    <div class="card card--glass card--benefit" id="benefit-crash">
+                        <div class="card__icon-box icon-crash">🔋</div>
+                        <h3>Sem Crash pós-treino</h3>
+                        <p class="card__description">Energia limpa com liberação gradual que não te deixa esgotado após o treino.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fórmula e Ingredientes Section -->
+    <section id="formula" class="formula">
+        <div class="container">
+            <div class="formula__container">
+                <div class="formula__media">
+                    <div class="formula__glow"></div>
+                    <div class="formula__spec-image-wrapper">
+                        <!-- Imagem dinâmica que muda com o tema no JS -->
+                        <img src="assets/images/monstro_citrus.png" alt="Energético Mansão Maromba Fórmula" class="formula__spec-can" id="formula-can-img">
+                    </div>
+                </div>
+                
+                <div class="formula__details">
+                    <span class="badge">CIÊNCIA & FORÇA</span>
+                    <h2 class="formula__title" id="formula-title">O QUE TEM DENTRO DO MONSTRO?</h2>
+                    <p class="formula__description">Nossa tabela nutricional é transparente. Ingredientes premium para quem leva o corpo a sério.</p>
+                    
+                    <div class="formula__ingredients-list">
+                        <div class="card card--ingredient" id="ing-beta">
+                            <div class="card__header">
+                                <span class="card__amount">1.5g</span>
+                                <h4>Beta-Alanina</h4>
+                            </div>
+                            <p class="card__description">Auxilia na redução da fadiga muscular e aumenta a carnosina nos músculos, permitindo séries mais longas e intensas.</p>
+                        </div>
+                        <div class="card card--ingredient" id="ing-taurine">
+                            <div class="card__header">
+                                <span class="card__amount">1000mg</span>
+                                <h4>Taurina</h4>
+                            </div>
+                            <p class="card__description">Melhora o foco mental, regula os batimentos cardíacos durante o esforço físico e protege o tecido muscular.</p>
+                        </div>
+                        <div class="card card--ingredient" id="ing-caffeine">
+                            <div class="card__header">
+                                <span class="card__amount">150mg</span>
+                                <h4>Cafeína Anidra</h4>
+                            </div>
+                            <p class="card__description">Potente estimulante do sistema nervoso central. Acelera o metabolismo e eleva a força de contração muscular.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Atletas Section -->
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2 class="testimonials__title text-center" id="depoimentos-title">APROVADO POR QUEM TREINA PESADO</h2>
+            <p class="testimonials__subtitle text-center" id="depoimentos-subtitle">Veja o depoimento de atletas de elite que substituíram o pré-treino convencional.</p>
+            
+            <div class="testimonials__grid">
+                <div class="card card--glass card--testimonial" id="testimonial-1">
+                    <div class="card__meta">
+                        <div class="card__avatar" id="avatar-1">💪</div>
+                        <div class="card__user-info">
+                            <h4>Felipe "Monstro" Silva</h4>
+                            <span class="card__user-role">Atleta de Fisiculturismo</span>
+                        </div>
+                    </div>
+                    <p class="card__comment">
+                        "O formigamento da beta-alanina é na medida certa. Tomo 15 minutos antes do treino de pernas e a força vai até a última repetição, sem aquela moleza depois que o efeito passa."
+                    </p>
+                </div>
+                <div class="card card--glass card--testimonial" id="testimonial-2">
+                    <div class="card__meta">
+                        <div class="card__avatar" id="avatar-2">⚡</div>
+                        <div class="card__user-info">
+                            <h4>Larissa Coutinho</h4>
+                            <span class="card__user-role">Campeã de Powerlifting</span>
+                        </div>
+                    </div>
+                    <p class="card__comment">
+                        "O sabor Citrus é sensacional, super refrescante e sem aquele gosto residual de adoçante. Me ajuda a focar na técnica mesmo levantando cargas máximas."
+                    </p>
+                </div>
+                <div class="card card--glass card--testimonial" id="testimonial-3">
+                    <div class="card__meta">
+                        <div class="card__avatar" id="avatar-3">🏋️</div>
+                        <div class="card__user-info">
+                            <h4>Gustavo "Giga" Santos</h4>
+                            <span class="card__user-role">Treinador & Influenciador</span>
+                        </div>
+                    </div>
+                    <p class="card__comment">
+                        "Eu recomendo para os meus alunos. Zero açúcar de verdade, não estraga o planejamento nutricional e dá uma clareza mental monstra durante as sessões de cárdio."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="faq__title text-center" id="faq-title">PERGUNTAS FREQUENTES</h2>
+            <p class="faq__subtitle text-center" id="faq-subtitle">Tudo o que você precisa saber sobre o energético Mansão Maromba.</p>
+            
+            <div class="faq__accordion-wrapper" id="faq-accordion-container">
+                <div class="faq__item" id="faq-item-1">
+                    <button class="faq__trigger" aria-expanded="false" id="faq-btn-1">
+                        <span>Como a Beta-Alanina funciona no energético?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__content">
+                        <p class="faq__text">A Beta-Alanina gera uma sensação passageira de formigamento (parestesia), que é perfeitamente normal e segura. Ela atua diretamente nos músculos reduzindo a acidez muscular (causada pelo ácido lático) permitindo que você treine com mais intensidade por mais tempo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item" id="faq-item-2">
+                    <button class="faq__trigger" aria-expanded="false" id="faq-btn-2">
+                        <span>Qual o melhor horário para tomar?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__content">
+                        <p class="faq__text">Recomendamos consumir cerca de 15 a 30 minutos antes do início do seu treino para obter o máximo desempenho da cafeína e da beta-alanina. Pode também ser tomado durante treinos longos de alta intensidade.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item" id="faq-item-3">
+                    <button class="faq__trigger" aria-expanded="false" id="faq-btn-3">
+                        <span>O energético Mansão Maromba quebra o jejum?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__content">
+                        <p class="faq__text">Como o energético possui zero açúcar e uma quantidade desprezível de calorias, ele não eleva os níveis de insulina e, portanto, não interrompe o estado de jejum metabólico para fins de queima de gordura.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item" id="faq-item-4">
+                    <button class="faq__trigger" aria-expanded="false" id="faq-btn-4">
+                        <span>Existem contraindicações?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__content">
+                        <p class="faq__text">Por conter 150mg de cafeína, não é recomendado para crianças, gestantes, lactantes e pessoas sensíveis à cafeína ou com problemas cardíacos. Em caso de dúvidas, consulte um médico ou nutricionista.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <a href="#" class="footer__logo">
+                    <span class="footer__logo-highlight">MANSÃO</span>MAROMBA
+                </a>
+                <p class="footer__description">Energia de monstro para quem leva o treino a sério. Junte-se ao clã.</p>
+            </div>
+            
+            <div class="footer__links">
+                <h4 class="footer__links-title">Navegação</h4>
+                <ul class="footer__links-list">
+                    <li><a href="#sabores" class="footer__links-link">Sabores</a></li>
+                    <li><a href="#beneficios" class="footer__links-link">Benefícios</a></li>
+                    <li><a href="#formula" class="footer__links-link">Fórmula</a></li>
+                    <li><a href="#faq" class="footer__links-link">Dúvidas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__social">
+                <h4 class="footer__social-title">Redes Sociais</h4>
+                <div class="footer__social-icons">
+                    <a href="#" class="footer__social-link" aria-label="Instagram" id="social-instagram">📷 Instagram</a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube" id="social-youtube">🎥 YouTube</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok" id="social-tiktok">📱 TikTok</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__copyright">&copy; 2026 Mansão Maromba. Todos os direitos reservados. Feito para quem esmaga o treino.</p>
+                <p class="footer__warning">Aviso: O consumo de cafeína deve ser moderado. Conservar em local seco e fresco.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
